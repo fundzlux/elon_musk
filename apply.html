@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Innovations | Employment Application</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-secondary: #121216;
+            --accent: #d4af37;
+            --text-main: #ffffff;
+            --text-muted: #a0a0aa;
+            --font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: var(--bg-secondary);
+            border: 1px solid #222;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 14px;
+            background-color: #18181f;
+            border: 1px solid #333;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            border-radius: 2px;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--accent);
+            border: 1px solid var(--accent);
+            color: var(--bg-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: transparent;
+            color: var(--accent);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .back-link:hover { color: var(--text-main); }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Employment Application</h2>
+        <p class="subtitle">Please submit your professional credentials for talent evaluation.</p>
+        
+        <form action="review.html" method="GET">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required name="applicant_name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Target Position</label>
+                <select id="position" required>
+                    <option value="">Select a position...</option>
+                    <option value="powertrain">EV Powertrain Engineer</option>
+                    <option value="autonomous">Autonomous Systems Developer</option>
+                    <option value="chassis">Chassis Dynamics Specialist</option>
+                    <option value="grid">Grid Storage Architect</option>
+                    <option value="security">Embedded Systems Security</option>
+                    <option value="logistics">Logistics Infrastructure Lead</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Professional Summary</label>
+                <textarea id="experience" placeholder="Outline your relevant engineering experience..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Portfolio</button>
+        </form>
+
+        <a href="careers.html" class="back-link">&#8592; Back to Dashboard</a>
+    </div>
+
+</body>
+</html>

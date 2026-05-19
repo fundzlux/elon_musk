@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Innovations | Engineering Careers</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-secondary: #121216;
+            --accent: #d4af37; /* Luxury Gold */
+            --text-main: #ffffff;
+            --text-muted: #a0a0aa;
+            --font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            padding: 60px 20px;
+        }
+
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Job Grid Layout */
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .job-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid #1e1e24;
+            padding: 35px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .job-dept {
+            color: var(--accent);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .job-meta {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            padding: 15px 0;
+        }
+
+        .meta-item {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        .job-description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+
+        .apply-btn {
+            display: block;
+            text-align: center;
+            padding: 14px;
+            background-color: transparent;
+            border: 1px solid var(--accent);
+            color: var(--text-main);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: var(--accent);
+            color: var(--bg-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+            <h1>Global Talent Acquisition</h1>
+            <p>Join an elite engineering structure focused on scalable sustainable transit, automated assembly systems, and high-performance vehicular architectures.</p>
+        </header>
+
+        <div class="job-grid">
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Research & Development</span>
+                    <h2 class="job-title">EV Powertrain Engineer</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Austin, TX (Hybrid)</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $185 / hr</span>
+                    </div>
+                    <p class="job-description">Optimize thermal management systems and power distribution architectures for next-generation electric drivetrains.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Artificial Intelligence</span>
+                    <h2 class="job-title">Autonomous Systems Developer</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Palo Alto, CA (On-Site)</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $200 / hr</span>
+                    </div>
+                    <p class="job-description">Deploy computer vision models and sensor fusion algorithms to enhance real-time navigation capabilities.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Manufacturing Engineering</span>
+                    <h2 class="job-title">Chassis Dynamics Specialist</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Berlin, DE (On-Site)</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $165 / hr</span>
+                    </div>
+                    <p class="job-description">Analyze structural rigidity, suspension geometry, and high-stress material behaviors during high-performance testing cycles.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Energy Infrastructure</span>
+                    <h2 class="job-title">Grid Storage Architect</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Nevada Gigafactory</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $175 / hr</span>
+                    </div>
+                    <p class="job-description">Design and scale commercial-tier battery deployment projects integrated with microgrid controller software for industrial deployment.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Software Operations</span>
+                    <h2 class="job-title">Embedded Systems Security</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Remote / Global</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $190 / hr</span>
+                    </div>
+                    <p class="job-description">Perform comprehensive vulnerability audits on vehicular firmware, communication buses, and over-the-air installation packages.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+
+            <div class="job-card">
+                <div>
+                    <span class="job-dept">Supply Chain</span>
+                    <h2 class="job-title">Logistics Infrastructure Lead</h2>
+                    <div class="job-meta">
+                        <span class="meta-item"><strong>Location:</strong> Shanghai, CN (On-Site)</span>
+                        <span class="meta-item"><strong>Classification:</strong> Full-Time</span>
+                        <span class="meta-item"><strong>Compensation:</strong> $150 / hr</span>
+                    </div>
+                    <p class="job-description">Coordinate large-scale material intake pipelines and component sourcing strategies to ensure unbroken manufacturing capacity.</p>
+                </div>
+                <a href="apply.html" class="apply-btn">Apply For Position</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
